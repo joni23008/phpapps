@@ -1,5 +1,5 @@
 <?php
-include("../header.html");
+include("header.html");
 ?>
 
 
@@ -17,5 +17,5 @@ echo "Terve. Materiaali tehtava 0. This is from index.php"
 
 
 <?php
-include("../footer.html");
+include("footer.html");
 ?>

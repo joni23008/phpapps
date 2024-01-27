@@ -1,0 +1,4 @@
+shell.hamk.fi/~joni23008/phpapps/TEHTÄVÄ KANSIO/index.php
+
+lataa win scp vain tarvittava/uniikki kansio.
+Siellä on jo footer,header ja css.

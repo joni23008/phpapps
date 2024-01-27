@@ -1,5 +1,7 @@
 body{
-background-color: rgba(0, 0, 0, 0.76);
+margin: 0; /* Remove default margin */
+padding: 0; /* Remove default padding */
+background: linear-gradient(to right, #178a9c, rgb(26, 136, 92)); /* Adjust colors as needed */
 color: rgb(255, 255, 255);
 }
 
