@@ -1,0 +1,14 @@
+body{
+background-color: rgba(0, 0, 0, 0.76);
+color: rgb(255, 255, 255);
+}
+
+header{
+background-color: rgba(0, 0, 0, 0.394);
+color: rgb(255, 255, 255);
+}
+
+footer{
+background-color: rgba(0, 0, 0, 0.416);
+color: rgb(255, 255, 255);
+}
