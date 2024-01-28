@@ -12,7 +12,7 @@ Jos annettu arvo on vähintään 5, mutta pienempi kuin 15, tulostetaan Ulkona o
 Jos annettu arvo on vähintään 15, mutta alle 20, tulostetaan ulkona on melko lämmin.
 Jos annettu arvo on vähintään 20, mutta alle 25, tulostetaan ulkona on kaunis kesäilma.
 muussa tapauksessa tulostetaan ulkona on helle.*/
-$luku=25;
+$luku=-1;
 
 if ($luku < 0 ){
     print"Ulkona on pakkasta.";
