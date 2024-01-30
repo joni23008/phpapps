@@ -1,0 +1,21 @@
+
+<form name='urheilulomake' action="tulosta.php" method="post" enctype="text/plain">
+  
+  Nimi: <input type="text" name="nimi" value="" size="40" maxlength="40"/>
+  <br>
+  Sähköposti: <input type="text" name="sahkoposti" value="" size="40" maxlength="40"/>
+  <br>
+  Urheilulaji: <br>
+  <input type="checkbox" name="urheilulaji[]" value="1"/>Jääkiekko<br>
+  <input type="checkbox" name="urheilulaji[]" value="2"/>Koripallo<br>
+  <input type="checkbox" name="urheilulaji[]" value="3"/>Jalkapallo<br>
+  <input type="checkbox" name="urheilulaji[]" value="4"/>Karate<br>
+  Ajankohta: <br>
+  <input type="radio" name="ajankohta" value="6-11"/>Aamu<br>
+  <input type="radio" name="ajankohta" value="11-17"/>Päivä<br>
+  <input type="radio" name="ajankohta" value="17-23"/>Ilta<br>
+  
+  <input type="submit" name="ok" value="Lähetä"/>
+  <input type="reset" name="eiok" value="Tyhjennä"/>
+</form>
+
