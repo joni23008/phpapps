@@ -1,28 +1,29 @@
 <?php
+// Include header
 include("header.html");
-?>
 
-<?php
+// Read form data
 $nimi = isset($_POST["nimi"]) ? $_POST["nimi"] : null;
 $sahkoposti = isset($_POST["sahkoposti"]) ? $_POST["sahkoposti"] : null;
-$urheilulaji[] = isset($_POST["urheilulaji[]"]) ? $_POST["urheilulaji[]"] : null;
+$urheilulaji = isset($_POST["urheilulaji"]) ? $_POST["urheilulaji"] : null;
 $ajankohta = isset($_POST["ajankohta"]) ? $_POST["ajankohta"] : null;
 
+// Display user information
+echo "<h2>Käyttäjän tiedot:</h2>";
+echo "Nimi: $nimi<br>";
+echo "Sähköposti: $sahkoposti<br>";
 
- 	print "Nimi=$nimi<br>";
+if ($urheilulaji) {
+    echo "<p>Valitut urheilulajit:</p>";
+    echo "<ul>";
+    foreach ($urheilulaji as $laji) {
+        echo "<li>$laji</li>";
+    }
+    echo "</ul>";
+}
 
- 	print "Sähköposti=$sahkoposti<br>";
+echo "Valittu ajankohta: $ajankohta";
 
-
-	 foreach($urheilulaji as $key => $value){
-	 	print "Urheilulaji[$key]=$value<br>";
-	 } 
-
- 	print "Ajankohta=$ajankohta";
-
-
-?>
-
-<?php
+// Include footer
 include("footer.html");
 ?>
