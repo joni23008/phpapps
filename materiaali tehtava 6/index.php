@@ -44,6 +44,9 @@ Jakojäännös=2
 
 ?>
  <?php
+ print "<h3><i>Tee sellainen PHP -ohjelma, 
+ joka laskee kahden muuttujan summan, erotuksen tulon, osamäärän ja osamäärän jakojäännöksen. <br>
+ Toteuta ohjelma käyttäen aliohjelmia. Päätason koodi voisi olla esimerkiksi seuraavan näköinen:</i></h3>";
 
 //Metodi palauttaa yhden kokonaisluvun
 $luku1=lueLuku1();
@@ -126,11 +129,16 @@ return $jakojaannos;
 
 <?php
 function tulosta($summa, $erotus, $tulo, $osamaara, $jakojaannos) {
-print "Summa=". $summa . "<br>";
-print "Erotus=". $erotus . "<br>";
-print "Tulo=". $tulo . "<br>";
-print "Osamäärä=". $osamaara . "<br>";
-print "Jakojäännös=". $jakojaannos . "<br>";
+    print "<h4><i>Metodi palauttaa parametrien summan.</i></h4>";
+print "Summa = ". $summa . "<br>";
+    print "<h4><i>Metodi palauttaa parametrien erotuksen.</i></h4>";
+print "Erotus = ". $erotus . "<br>";
+    print "<h4><i>Metodi palauttaa parametrien tulon.</i></h4>";
+print "Tulo = ". $tulo . "<br>";
+    print "<h4><i>Metodi palauttaa parametrien osamäärän.</i></h4>";
+print "Osamäärä = ". $osamaara . "<br>";
+    print "<h4><i>Metodi palauttaa parametrien osamäärän jakojäännöksen.</i></h4>";
+print "Jakojäännös = ". $jakojaannos . "<br>";
 
 }
 ?>

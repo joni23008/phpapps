@@ -15,52 +15,93 @@ include("header.html");
 ?>
 
 <?php
-/*a) Tee sellainen php -ohjelma, joka tulostaa esimerkkitietokannasta kaikki saalislajit, joita Pentti Ojaniemi on metsästänyt.
+//Kaikki saalislajit
+$a=mysqli_query($yhteys, "select id, laji from lajit");
+print "<h4><i>A) Kaikki saalislajit</i></h4>";
+while ($rivi=mysqli_fetch_object($a)){
+    print "ID = $rivi->id laji = $rivi->laji<br>";
+}
 
-b) Lisää a -kohdan ohjelmaan ominaisuus, joka tulostaa esimerkkitietokannasta kaikki saalislajit, joita Risto Reipas on metsästänyt.
+//Kaikki saalislajit,joita Pentti Ojaniemi on metsästänyt.
+$a=mysqli_query($yhteys,"SELECT lajit.laji, metsastajat.nimi
+FROM metsastajat
+JOIN saaliit ON metsastajat.numero = saaliit.metsastajaId
+JOIN lajit ON saaliit.lajiId = lajit.id
+WHERE metsastajat.nimi LIKE 'Pentti Ojaniemi'");
 
-c) Lisää b -kohdan ohjelmaan ominaisuus, joka tulostaa esimerkkitietokannasta kaikki saalislajit, joita on saatu Peräseinäjoella.
-
-d) Lisää c -kohdan ohjelmaan ominaisuus, joka tulostaa esimerkkitietokannasta kaikki saalislajit, joita on saatu Sahalahdella.
-
-Otsikoi tulosteet selkeästi
-
-Lisää ohjelmaan html -kielinen alkuosa ja loppuosa erillisistä tiedostoista. Kommentoi ohjelmasi huolellisesti.
-*/
-print"<h2>1. Kauris 2. Hirvi 3. Metsäjänis 4. Rusakko </h2>";
-
-
-
-$a=mysqli_query($yhteys, "select lajiId, metsastajaId from saaliit where metsastajaId = 1234");
-print "<h3>A) Kaikki saalislajit,joita Pentti Ojaniemi on metsästänyt.</h3>";
+print "<h4><i>A) Kaikki saalislajit,joita Pentti Ojaniemi on metsästänyt.</i></h4>";
 
 while ($rivi=mysqli_fetch_object($a)){
-    print "lajiId=$rivi->lajiId metsastajaId=$rivi->metsastajaId<br>";
+?>
+    <ul>
+        <li>
+            <?php
+            print "Laji = $rivi->laji <br> Metsästäjän nimi = $rivi->nimi<br>";
+            ?>
+        </li>
+    </ul>
+<?php
 }
+//Kaikki saalislajit,joita Risto Reipas on metsästänyt.
+$a=mysqli_query($yhteys,"SELECT lajit.laji, metsastajat.nimi
+FROM metsastajat
+JOIN saaliit ON metsastajat.numero = saaliit.metsastajaId
+JOIN lajit ON saaliit.lajiId = lajit.id
+WHERE metsastajat.nimi LIKE 'Risto Reipas'");
 
-$b=mysqli_query($yhteys, "select lajiId, metsastajaId from saaliit where metsastajaId = 1235");
-print "<h3>B) Kaikki saalislajit,joita Risto Reipas on metsästänyt.</h3>";
+print "<h4><i>B) Kaikki saalislajit,joita Risto Reipas on metsästänyt.</i></h4>";
 
-while ($rivi=mysqli_fetch_object($b)){
-    print "lajiId=$rivi->lajiId metsastajaId=$rivi->metsastajaId<br>";
+while ($rivi=mysqli_fetch_object($a)){
+?>
+    <ul>
+        <li>
+            <?php
+            print "Laji = $rivi->laji <br> Metsästäjän nimi = $rivi->nimi<br>";
+            ?>
+        </li>
+    </ul>
+<?php
 }
+//Kaikki saalislajit,joita on saatu Peräseinäjoelta.
+$a=mysqli_query($yhteys,"SELECT lajit.laji, paikkakunnat.kunta
+FROM paikkakunnat
+JOIN saaliit ON paikkakunnat.id = saaliit.paikkaId
+JOIN lajit ON saaliit.lajiId = lajit.id
+WHERE paikkakunnat.kunta LIKE 'Peräseinäjoki'");
 
-$c=mysqli_query($yhteys, "select lajiId, paikkaId from saaliit where paikkaId = 2");
-print "<h3>B) Kaikki saalislajit,joita on saatu Peräseinäjoelta.</h3>";
+print "<h4><i>C) Kaikki saalislajit,joita on saatu Peräseinäjoelta</i></h4>";
 
-while ($rivi=mysqli_fetch_object($c)){
-    print "lajiId=$rivi->lajiId paikkaId=$rivi->paikkaId<br>";
+while ($rivi=mysqli_fetch_object($a)){
+?>
+    <ul>
+        <li>
+            <?php
+            print "Laji = $rivi->laji <br> Paikkakunta = $rivi->kunta<br>";
+            ?>
+        </li>
+    </ul>
+<?php
 }
+//Kaikki saalislajit,joita on saatu Sahalahdelta.
+$a=mysqli_query($yhteys,"SELECT lajit.laji, paikkakunnat.kunta
+FROM paikkakunnat
+JOIN saaliit ON paikkakunnat.id = saaliit.paikkaId
+JOIN lajit ON saaliit.lajiId = lajit.id
+WHERE paikkakunnat.kunta LIKE 'Sahalahti'");
 
-$c=mysqli_query($yhteys, "select lajiId, paikkaId from saaliit where paikkaId = 1");
-print "<h3>B) Kaikki saalislajit,joita on saatu Sahalahdelta.</h3>";
+print "<h4><i>D) Kaikki saalislajit,joita on saatu Sahalahdelta</i></h4>";
 
-while ($rivi=mysqli_fetch_object($c)){
-    print "lajiId=$rivi->lajiId paikkaId=$rivi->paikkaId<br>";
+while ($rivi=mysqli_fetch_object($a)){
+?>
+    <ul>
+        <li>
+            <?php
+            print "Laji = $rivi->laji <br> Paikkakunta = $rivi->kunta<br>";
+            ?>
+        </li>
+    </ul>
+<?php
 }
-
-
-
 
 $ok=mysqli_close($yhteys);
 ?>

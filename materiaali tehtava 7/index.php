@@ -12,6 +12,8 @@ Tee php -kielinen ohjelma, joka lukee em. lomakkeelta tulevat tiedot ja tulostaa
 
 Lisää ohjelmaan html -kielinen alkuosa ja loppuosa erillisistä tiedostoista. Kommentoi ohjelmasi huolellisesti.*/
 print "<h1>Urheilulomake</h1>";
+print "<h4><i>Tee html -kielellä (tai php) lomake, 
+jossa...</i></h4>"
 ?>
 
 

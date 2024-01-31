@@ -1,12 +1,13 @@
 <form name='urheilulomake' action="tulosta.php" method="post">
+<h4><i>...syötekenttinä ovat nimi (text), sähköpostiosoite (text),... </i></h4>
   Nimi: <input type="text" name="nimi" value="" size="40" maxlength="40"/><br>
   Sähköposti: <input type="text" name="sahkoposti" value="" size="40" maxlength="40"/><br>
-  
+<h4><i>...muutama valittavissa oleva urheilulaji (checkbox) ja... </i></h4>
   Urheilulaji:<br>
   <input type="checkbox" name="urheilulaji[]" value="Jääkiekko"/>Jääkiekko<br>
   <input type="checkbox" name="urheilulaji[]" value="Koripallo"/>Koripallo<br>
   <input type="checkbox" name="urheilulaji[]" value="Jalkapallo"/>Jalkapallo<br>
-  
+<h4><i>...muutama valittavissa oleva urheiluun käytettävä aikaväli (radio).... </i></h4>
   Ajankohta:<br>
   <input type="radio" name="ajankohta" value="Aamu"/>Aamu<br>
   <input type="radio" name="ajankohta" value="Päivä"/>Päivä<br>
