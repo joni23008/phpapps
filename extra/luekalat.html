@@ -1,0 +1,38 @@
+<!--kala    Kala    tehtävä -->
+
+
+    <script>
+    function lueHenkilot(){
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+                  json=this.responseText;
+                document.getElementById("henkilojson").innerHTML = json;
+                henkilot=JSON.parse(json);
+                tulostaHenkilot(henkilot);
+          }
+        };
+        xmlhttp.open("GET", "luekalat.php", true);
+        xmlhttp.send();	
+    }
+    
+    function tulostaHenkilot(henkilot){
+        let text="<table border='1'>";
+        for (x in henkilot){
+            text+="<tr><td>"+henkilot[x].id+"<td>"+henkilot[x].etunimi+"<td>"+henkilot[x].sukunimi;
+        }
+        text+="</table>";
+        document.getElementById("henkilotaulukko").innerHTML=text;
+    }
+    
+    
+    </script>
+    <p>
+    Ks. <a href='https://www.w3schools.com/js/js_json_html.asp' target='_blank'>https://www.w3schools.com/js/js_json_html.asp</a>
+    </p>
+    <button onclick='lueHenkilot();'>Lue henkilöt</button>
+    <p id='henkilojson'>
+    Tulos tähän
+    </p>
+    <h2>Henkilot taulukossa</h2>
+    <div id='henkilotaulukko'></div>

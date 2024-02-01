@@ -7,7 +7,7 @@ function tulostaHello(){
 		    document.getElementById("result").innerHTML = this.responseText;
 	  }
 	};
-	xmlhttp.open("GET", "../php/tulostahello.php", true);
+	xmlhttp.open("GET", "tulostahello.php", true);
 	xmlhttp.send();	
 }
 </script>

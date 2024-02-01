@@ -1,0 +1,22 @@
+body{
+margin: 0; /* Remove default margin */
+padding: 0; /* Remove default padding */
+background: linear-gradient(to right, #178a9c, rgb(26, 136, 92)); /* Adjust colors as needed */
+color: rgb(255, 255, 255);
+}
+
+header{
+background-color: rgba(0, 0, 0, 0.394);
+color: rgb(255, 255, 255);
+}
+
+footer{
+background-color: rgba(0, 0, 0, 0.416);
+color: rgb(255, 255, 255);
+}
+
+h4{
+    margin: 0%;
+    padding: 10px;
+
+}
