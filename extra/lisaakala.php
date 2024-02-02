@@ -35,8 +35,9 @@ function tarkistaJson($json){
     if (empty($henkilo->etunimi) || empty($henkilo->sukunimi)){
         return false;
     }
+
     return $henkilo;
 }
 ?>
 
-<!--kala    Kala     -->
+<!--kala    Kala    -->
