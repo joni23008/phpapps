@@ -46,6 +46,7 @@ main-sivu ja reseptit-sivu
 ## TO DO ##
 - siirtää vanhan projektin muitten käytettäväksi
 - yhteysvirhe.html
+- muokkaa rakenne yhteensopivaks php kanssa siten et headerit,footerit, jne kaikki omista tiedostoista.
 **Tehdyt tehtävät**
 - Made index.html file and recipe.html.
 - We all did Figma-design and chose the best one.
@@ -58,6 +59,7 @@ viikon ruokalista-sivu
 ## TO DO ##
 - Discord ryhmä
 - submitted.html
+- kato styles_joni.css ootko mitä mieltä haluatko käyttää muihinkin sivuihin? Näkee main sivulla ja reseptit sivulla.
 **Tehdyt tehtävät**
 - Made ruokalista.html
 - We all did Figma-design and chose the best one.
@@ -69,6 +71,7 @@ tietoa meistä-sivu
 ## TO DO ##
 - Alkaa yrittää koota lomaketta toimivaksi
 - lomake.html
+- kato styles_joni.css ootko mitä mieltä haluatko käyttää muihinkin sivuihin? Näkee main sivulla ja reseptit sivulla.
 ## Tehdyt tehtävät ##
 - We all did a Figma-design and chose the best one
 - Decided everyone does one page and for me it was the page "About Us"
