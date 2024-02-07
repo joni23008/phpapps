@@ -1,0 +1,44 @@
+<!--kala    Kala     -->
+    <script>
+    function lahetaHenkilo(lomake){
+        var henkilo=new Object();
+        henkilo.etunimi=lomake.etunimi.value;
+        henkilo.sukunimi=lomake.sukunimi.value;
+        var jsonHenkilo=JSON.stringify(henkilo);
+        
+        xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) 
+          {
+            if(henkilo.etunimi === 'Rick' || henkilo.sukunimi === 'Roll')
+            {
+                document.getElementById("result").innerHTML ="Kiitos kun lisäsit uuden henkilön <br>" + `<img src="media/Rickroll.gif">`;
+            }
+            else if(henkilo.etunimi === 'Pentti' || henkilo.sukunimi === 'Ojaniemi')
+            {
+                document.getElementById("result").innerHTML ="Kala kala = new kala()<br>"+ `<img src="media/sandstorm.gif">`;
+            }
+            else
+            {
+                document.getElementById("result").innerHTML ="Kiitos kun lisäsit uuden henkilön <br>";
+            }
+
+          }
+
+        };
+        xmlhttp.open("POST", "lisaakala.php", true);
+        xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xmlhttp.send("henkilo=" + jsonHenkilo);	
+    }
+    </script>
+    
+    <h2>Fill in!</h2>
+    <form id='henkilolomake'>
+    Etunimi: <input type='text' name='etunimi' value='' placeholder='henkilon etunimi...'><br>
+    Sukunimi: <input type='text' name='sukunimi' value='' placeholder='henkilon sukunimi...'><br>
+    <input type='button' name='ok' value='Lähetä' onclick='lahetaHenkilo(this.form);'><br>
+    
+    </form>
+    <p id='result'>
+    Palaute tähän
+    </p>

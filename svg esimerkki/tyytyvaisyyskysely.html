@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>Tyytyväisyyskysely</title>
+</head>
+<body>
+
+<!--
+Kaikilla painikkeilla on oma id (ok, about ja yes) ja
+kaikille painikkeille on oma click-käsittelijänsä jQuey -tyyliin 
+ -->
+<button id='no'>No</button>
+<button id='about'>About</button>
+<button id='yes'>Yes</button>
+<script>
+/*
+ * Jos klikataan painiketta ok, lähetetään ohjelmalle tallennnatulos.php
+ * post -tyyppisesti arvo 'no' attribuutissa value. Siis php-ohjelmassa
+ * arvo luetaan $jokinmuuttuja=$_POST["value"];
+ * Vastauksena saatu php:n tulostama data laitetaan tämän html-tiedoston
+ * div-elementin 'tulos' sisällöksi.
+ */
+$(document).ready(function(){
+	$("#no").click(function(){
+		$.post("tallennatulos.php",
+		{
+			value:"no"
+		},
+		function(data, status){
+			$("#tulos").html(data);					
+		});
+	});
+/*
+ * Vastaava kuin edellinen, mutta nyt lähetetään arvo 'about'.
+ */
+	$("#about").click(function(){
+		$.post("tallennatulos.php",
+		{
+			value:"about"
+		},
+		function(data, status){
+			$("#tulos").html(data);					
+		});
+	});
+/*
+ * Vastaava kuin edellinen, mutta nyt lähetetään arvo 'yes'.
+ */
+	$("#yes").click(function(){
+		$.post("tallennatulos.php",
+		{
+			value:"yes"
+		},
+		function(data, status){
+			$("#tulos").html(data);					
+		});
+	});
+});
+</script>
+<!-- 
+Alla olevan div-elementin sisällöksi laitetaan mitä php-ohjelma tulostaa.
+ -->
+<div id='tulos'>
+Tähän tulokset
+</div>
+</body>
+</html>
