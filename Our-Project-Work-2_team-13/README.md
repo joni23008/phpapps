@@ -45,6 +45,7 @@ Ylläpitopuoli on suojattu "htaccessilla". Muutetaan nykyistä projektia ja sen 
 main-sivu ja reseptit-sivu
 ## TO DO ##
 - siirtää vanhan projektin muitten käytettäväksi
+- yhteysvirhe.html
 **Tehdyt tehtävät**
 - Made index.html file and recipe.html.
 - We all did Figma-design and chose the best one.
@@ -56,6 +57,7 @@ main-sivu ja reseptit-sivu
 viikon ruokalista-sivu
 ## TO DO ##
 - Discord ryhmä
+- submitted.html
 **Tehdyt tehtävät**
 - Made ruokalista.html
 - We all did Figma-design and chose the best one.
@@ -66,6 +68,7 @@ viikon ruokalista-sivu
 tietoa meistä-sivu
 ## TO DO ##
 - Alkaa yrittää koota lomaketta toimivaksi
+- lomake.html
 ## Tehdyt tehtävät ##
 - We all did a Figma-design and chose the best one
 - Decided everyone does one page and for me it was the page "About Us"
