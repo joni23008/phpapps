@@ -55,7 +55,7 @@ main-sivu ja reseptit-sivu
 **Rooli**
 viikon ruokalista-sivu
 ## TO DO ##
-- Alkaa yrittää koota lomaketta toimivaksi
+- Discord ryhmä
 **Tehdyt tehtävät**
 - Made ruokalista.html
 - We all did Figma-design and chose the best one.
@@ -65,7 +65,7 @@ viikon ruokalista-sivu
 **Rooli**
 tietoa meistä-sivu
 ## TO DO ##
-- Footer linkki
+- Alkaa yrittää koota lomaketta toimivaksi
 ## Tehdyt tehtävät ##
 - We all did a Figma-design and chose the best one
 - Decided everyone does one page and for me it was the page "About Us"
