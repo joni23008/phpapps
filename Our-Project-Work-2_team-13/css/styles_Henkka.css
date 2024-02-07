@@ -51,3 +51,36 @@ footer{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(0, 0, 0);
   }
+
+
+
+  .palauteboxi {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 20px; /* Adds some space inside the form borders */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.palauteboxi input[type="text"],
+.palauteboxi input[type="email"],
+.palauteboxi textarea {
+    width: 50%; /* Full width */
+    padding: 12px 20px; /* Padding inside the inputs */
+    margin: 8px 0; /* Margin between inputs */
+    border: 1px solid #ccc; /* Grey border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Border box sizing */
+}
+
+.palauteboxi input[type="submit"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 14px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.palauteboxi input[type="submit"]:hover {
+    background-color: #45a049; /* Darker shade of green on hover */
+}

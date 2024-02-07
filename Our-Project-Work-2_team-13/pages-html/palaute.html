@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Team 13">
+    <meta name="description" content="reseptit,ruokalista,tietoa,meistä,mitä tänään syötäisiin">
+    <meta name="keywords"   content="reseptit,ruokalista,tietoa,meistä,mitä tänään syötäisiin">
+    <title>Lähetä palautetta</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles_Joni.css">
+    <link rel="stylesheet" type="text/css" href="../css/styles_Henkka.css">
+    
+</head>
+
+<body>
+    <h1>Lähetä terveisiä</h1>
+    <form action="palautteenKasittely.php" method="post" class="palauteboxi">
+        <label for="nimi">Nimi:</label>
+        <input type="text" id="nimi" name="nimi" required><br>
+        <label for="sahkoposti">Sähköposti:</label>
+        <input type="email" id="sahkoposti" name="sahkoposti" required><br>
+        <fieldset>
+            <legend>Haluaisin enemmän:</legend>
+            <label for="liharuoka">
+                <input type="radio" id="lihaa" name="resepti" value="lihaa" checked>Liharuokia
+            </label><br>
+            <label for="kasvisruoka">
+                <input type="radio" id="kasvisruoka" name="resepti" value="kasvis">Kasvisruokia
+            </label><br>
+            <label for="kalaruoka">
+                <input type="radio" id="kalaruoka" name="resepti" value="kalat">Kalaruokia
+            </label>
+        </fieldset>
+        <label for="viesti">Viesti:</label>
+        <textarea id="viesti" name="viesti" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Lähetä">
+    </form>
+    
+</body>
+</html>
