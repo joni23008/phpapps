@@ -82,10 +82,15 @@ viikon ruokalista-sivu
 **Rooli**
 tietoa meistä-sivu
 ## Tehdyt tehtävät ##
+*Staattinen verkkosivu*
 - We all did a Figma-design and chose the best one
 - Decided everyone does one page and for me it was the page "About Us"
 - Started working on the page, made my own CSS-file to modify the page how I wanted it to look like
 - Made aboutus.html
-- Started working on feedback form that sends an email
+
+*Web ohjelmointi*
+- Tein lomakkeen, joka lähettää palautetta sekä sähköpostiin, että jossain vaiheessa tietokantaan. (Täytyy käyttää temporary emailia, gmail ym ei ota näitä vastaan tälläisenään)
+- Lomakkeeseen lisätty "radio", eli kolme vaihtoehtoa otsikolla "Haluaisin lisää: *Liharuokia, *Kalaruokia tai *Kasvisruokia
+- Aboutus.html -> aboutus.php
 
 

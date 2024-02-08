@@ -38,7 +38,17 @@
     
 }
 
+footer{
 
+    position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: black; /* Ensure the background and color are set */
+  color: #D1D1D1; /* so the footer is visible against the content. */
+  text-align: center;
+    
+    
+  }
   
   h1{
     text-align:center;
