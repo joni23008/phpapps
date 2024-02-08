@@ -1,0 +1,38 @@
+### tunnukset ###
+databaseserver=db
+database=palaute
+username=kokki
+password=naminami
+
+### tietokannan perusilme ###
+id
+nimimerkki
+sähköposti
+tahtoo:vaihtoehdot:
+    liharuokia
+    kalaruokia
+    kasvisruokia
+viesti
+
+### Komennot joilla luodaan tää tietokanta ###
+
+CREATE DATABASE palaute;
+USE palaute;
+CREATE TABLE vierailijat (
+    id INT(200) PRIMARY KEY AUTO_INCREMENT,
+    nimimerkki TEXT(25),
+    sahkoposti VARCHAR(25),
+    tahtoo TEXT(25),
+    viesti VARCHAR(250)
+);
+
+
+### Käskyjä joilla voi tsekkaa miltä databasessa näyttää ###
+Check the contents of the table:
+    SELECT * FROM palaute.vierailijat;
+
+Check the data types of the table columns:
+    DESCRIBE palaute.vierailijat;
+
+Check the contents of the entire database:
+    SHOW TABLES FROM palaute;

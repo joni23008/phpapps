@@ -42,7 +42,7 @@ Ylläpitopuoli on suojattu "htaccessilla". Muutetaan nykyistä projektia ja sen 
 
 ### TEHTÄVIÄ ###
 - (JONI) nykyinen tiedosto -- footer, jossa on linkki palautelomakkeeseen.
-- (JONI) uusi tiedosto -- htaccess, tunnukset yhteydelle joka muodostetaan MySQL.
+- (JONI) työnalla, ei toimi vielä -- htaccess, tunnukset yhteydelle joka muodostetaan MySQL.
 - (JONI) MySQL -- tietokanta suunnittelu ja taulut. Ja miten saadaan yhteys jaettua/toimimaan.
 - (JONI) nykyinen tiedosto -- yhteysvirhe.html testaus.
 - (HENKKA) uusi tiedosto -- palautelomake (bootstrap), lomakkeen alapuolella voisi näkyä jo annetut palautteet.
