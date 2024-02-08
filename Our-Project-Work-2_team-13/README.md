@@ -41,7 +41,7 @@ Ylläpitopuoli on suojattu "htaccessilla". Muutetaan nykyistä projektia ja sen 
 
 
 ### TEHTÄVIÄ ###
-- (JONI) nykyinen tiedosto -- footer, jossa on linkki palautelomakkeeseen.
+- (JONI) pitäisi olla toiminnassa -- footer, jossa on linkki palautelomakkeeseen.
 - (JONI) työnalla, ei toimi vielä -- htaccess, tunnukset yhteydelle joka muodostetaan MySQL.
 - (JONI) suunnitetlu, jakaminen vielä suunnitteilla -- tietokanta suunnittelu ja taulut. Ja miten saadaan yhteys jaettua/toimimaan.
 - (JONI) työnalla, ei toimi vielä -- yhteysvirhe.html testaus.
@@ -61,6 +61,7 @@ tehty eli html osiot omissa tiedostoissa.Lisäksi voitas kimpassa miettii jos to
 **Rooli**
 main-sivu ja reseptit-sivu
 **Tehdyt tehtävät**
+- mysql database suunnittelu tehty, htaccess tiedosto tehty ja footer.html päivitetty siten, että siellä on linkki palautelomakkeeseen.
 - jaoin headerit/footerit/navbarin/maincontentin omiin html tiedostoihin ja php tiedostoihin.
 - tein yhteysvirhe_Joni.php/html tiedoston.
 - Tein index.html(nyk. main_Joni.html) ja index.php sekä reseptit_Joni.php/html.
