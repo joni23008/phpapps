@@ -74,3 +74,6 @@ tietoa meistä-sivu
 - Decided everyone does one page and for me it was the page "About Us"
 - Started working on the page, made my own CSS-file to modify the page how I wanted it to look like
 - Made aboutus.html
+- Started working on feedback form that sends an email
+
+
