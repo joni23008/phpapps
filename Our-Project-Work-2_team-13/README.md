@@ -13,6 +13,7 @@ Palaute lomake joka yhteydessä tietokantaan. Ylläpito pystyy selaamaan.
 Lomake voi olla thetynä bootsträpillä. Footerissa linkki lomake sivulle.
 Ylläpitopuoli on suojattu "htaccessilla". Muutetaan nykyistä projektia ja sen rakennetta enemmän muistuttamaan tätä kurssia.
 
+
 ## Sivu-rakenne ##
 - Main, pelkkä frontti. Linkit muille sivuille.
 - About us, joku siisti tarina.
@@ -39,45 +40,45 @@ Ylläpitopuoli on suojattu "htaccessilla". Muutetaan nykyistä projektia ja sen 
 - Jos sovelluksessa on osia, jotka on kopioitu netistä, tulee niiden toiminta tuntea yksityiskohtaisesti
 
 
+### TEHTÄVIÄ ###
+- (JONI) nykyinen tiedosto -- footer, jossa on linkki palautelomakkeeseen.
+- (JONI) uusi tiedosto -- htaccess, tunnukset yhteydelle joka muodostetaan MySQL.
+- (HENKKA) uusi tiedosto -- palautelomake (bootstrap), lomakkeen alapuolella voisi näkyä jo annetut palautteet.
+- (HENKKA) uusi tiedosto -- php, sähköposti ilmoitus uudesta submittista.
+- (MIKKO) uusi tiedosto -- php, tietojen kirjoittaminen tietokantaan.
+- (MIKKO) uusi tiedosto -- php, tietojen lukeminen tietokannnasta ja tiedot näkyisivät lomakesivulla.
+- (JONI) MySQL -- tietokanta suunnittelu ja taulut. Ja miten saadaan yhteys jaettua/toimimaan.
+- (JONI) nykyinen tiedosto -- yhteysvirhe.html testaus.
+- (MIKKO) Discord-ryhmä.
+- (MIKKO) uusi tiedosto -- submitted.html/php luominen ja testaus.
+- (HENKKA) uusi tiedosto -- lomake.html/php luominen ja testaus. Siirrä php tiedostot sille varattuun kansioon.
+- (MIKKO/HENKKA) nykyiset tiedostot -- päivittäkää teidän tekemät sivut siihen samaan formaattiin miten ollaan nyt kurssilla tehty eli html osiot omissa tiedostoissa.Lisäksi voitas kimpassa miettii jos tolle CSS tiedostolle jotai tekis.
+
 
 ### Joni ###
 **Rooli**
 main-sivu ja reseptit-sivu
-## TO DO ##
-- yhteysvirhe.html testaus
-- alkaa selvittämään miten saadaan tietokanta yhteys toimimaan ja miten toimii kaikilla.
-- tietokannan taulujen ja rakenteen luominen.
-
 **Tehdyt tehtävät**
 - jaoin headerit/footerit/navbarin/maincontentin omiin html tiedostoihin ja php tiedostoihin.
-- siirsin ja jaoin vanhan projektin muiden käytettäväksi.
-- tein yhteysvirhe.html tiedoston.
-- Made index.html file and recipe.html.
-- We all did Figma-design and chose the best one.
-- Made my own version of the CSS file.
-- Overviewed everybodys work before submitting and made adjustments if necessary.
+- tein yhteysvirhe_Joni.php/html tiedoston.
+- Tein index.html(nyk. main_Joni.html) ja index.php sekä reseptit_Joni.php/html.
+- Kaikki meistä tekivät Figma suunnittelman ja valittiin paras joka oli Mikolla.
+- Tein oman version CSS tiedostosta joka syntyi Figma suunnitelmasta.
+- Tarkistin kaikkien tehdyt työt ja projektin edistymisen.
+
 
 ### Mikko ###
 **Rooli**
 viikon ruokalista-sivu
-## TO DO ##
-- Discord ryhmä
-- submitted.html
-- päivitä ruokalista.html ja rakenna se samalla tapaa kuin Jonilla. Eli niiku kurssilla ollaan tehty, header/footer/main/navbar omiin html tiedostoihin(Joni teki jo eli käytät vaa niitä) ja rakennat php tiedoston mikä käyttää sit niitä.
-- kato styles_joni.css ootko mitä mieltä haluatko käyttää muihinkin sivuihin? Näkee main sivulla ja reseptit sivulla.
 **Tehdyt tehtävät**
 - Made ruokalista.html
 - We all did Figma-design and chose the best one.
 - Made CSS-file for ruokalista.html (styles_Mikko.css)
 
+
 ### Henri ###
 **Rooli**
 tietoa meistä-sivu
-## TO DO ##
-- Alkaa yrittää koota lomaketta toimivaksi. Siirrä php tiedostot sille varattuun kansioon.
-- lomake.html
-- päivitä aboutus.html ja rakenna se samalla tapaa kuin Jonilla. Eli niiku kurssilla ollaan tehty, header/footer/main/navbar omiin html tiedostoihin(Joni teki jo eli käytät vaa niitä) ja rakennat php tiedoston mikä käyttää sit niitä.
-- kato styles_joni.css ootko mitä mieltä haluatko käyttää muihinkin sivuihin? Näkee main sivulla ja reseptit sivulla.
 ## Tehdyt tehtävät ##
 - We all did a Figma-design and chose the best one
 - Decided everyone does one page and for me it was the page "About Us"
