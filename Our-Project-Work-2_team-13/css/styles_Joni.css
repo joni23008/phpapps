@@ -116,7 +116,7 @@ footer {
 
 a {
   text-decoration: none;
-  color: #D1D1D1;
+  color: #181818;
   font-size: 30px;
   font-weight: 500;
 }
@@ -158,4 +158,8 @@ a {
   cursor: pointer;
   appearance: none;
   background-color: inherit;
+}
+
+.palautelinkki{
+  color: rgb(255, 255, 255);
 }
