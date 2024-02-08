@@ -1,12 +1,13 @@
 <?php
 //header
-include("header.html");
-//
-include("navbar.html");
+include("../pages-html/header_Joni.html");
+
+//navbar
+include("../pages-html/navbar_Joni.html");
 
 //mikä on sivun pääsisältö. 7 vaihtoehtoa. 
 //1. main
-include("main.html");
+include("../pages-html/main_Joni.html");
 //2. tietoa meistä
 //include("");
 //3. reseptit
@@ -21,5 +22,5 @@ include("main.html");
 //include("");
 
 //footer
-include("footer.html");
+include("../pages-html/footer_Joni.html");
 ?>

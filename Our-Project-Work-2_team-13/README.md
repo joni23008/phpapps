@@ -44,9 +44,14 @@ Ylläpitopuoli on suojattu "htaccessilla". Muutetaan nykyistä projektia ja sen 
 **Rooli**
 main-sivu ja reseptit-sivu
 ## TO DO ##
-- siirtää vanhan projektin muitten käytettäväksi
-- yhteysvirhe.html
+- yhteysvirhe.html testaus
+- alkaa selvittämään miten saadaan tietokanta yhteys toimimaan ja miten toimii kaikilla.
+- tietokannan taulujen ja rakenteen luominen.
+
 **Tehdyt tehtävät**
+- jaoin headerit/footerit/navbarin/maincontentin omiin html tiedostoihin ja php tiedostoihin.
+- siirsin ja jaoin vanhan projektin muiden käytettäväksi.
+- tein yhteysvirhe.html tiedoston.
 - Made index.html file and recipe.html.
 - We all did Figma-design and chose the best one.
 - Made my own version of the CSS file.
@@ -58,6 +63,8 @@ viikon ruokalista-sivu
 ## TO DO ##
 - Discord ryhmä
 - submitted.html
+- päivitä ruokalista.html ja rakenna se samalla tapaa kuin Jonilla. Eli niiku kurssilla ollaan tehty, header/footer/main/navbar omiin html tiedostoihin(Joni teki jo eli käytät vaa niitä) ja rakennat php tiedoston mikä käyttää sit niitä.
+- kato styles_joni.css ootko mitä mieltä haluatko käyttää muihinkin sivuihin? Näkee main sivulla ja reseptit sivulla.
 **Tehdyt tehtävät**
 - Made ruokalista.html
 - We all did Figma-design and chose the best one.
@@ -67,8 +74,10 @@ viikon ruokalista-sivu
 **Rooli**
 tietoa meistä-sivu
 ## TO DO ##
-- Alkaa yrittää koota lomaketta toimivaksi
+- Alkaa yrittää koota lomaketta toimivaksi. Siirrä php tiedostot sille varattuun kansioon.
 - lomake.html
+- päivitä aboutus.html ja rakenna se samalla tapaa kuin Jonilla. Eli niiku kurssilla ollaan tehty, header/footer/main/navbar omiin html tiedostoihin(Joni teki jo eli käytät vaa niitä) ja rakennat php tiedoston mikä käyttää sit niitä.
+- kato styles_joni.css ootko mitä mieltä haluatko käyttää muihinkin sivuihin? Näkee main sivulla ja reseptit sivulla.
 ## Tehdyt tehtävät ##
 - We all did a Figma-design and chose the best one
 - Decided everyone does one page and for me it was the page "About Us"
