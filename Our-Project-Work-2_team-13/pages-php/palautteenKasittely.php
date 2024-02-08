@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     mail($to, $subject, $message);
 
-    // Include HTML structure and link to your CSS files
+    //html tulostus, jotta saadaan .css tiedostot mukaan
     echo '<!DOCTYPE html>
 <html lang="fi">
 <head>
