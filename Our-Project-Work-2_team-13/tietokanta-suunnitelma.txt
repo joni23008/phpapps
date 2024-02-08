@@ -16,15 +16,19 @@ viesti
 
 ### Komennot joilla luodaan tää tietokanta ###
 
-CREATE DATABASE palaute;
-USE palaute;
-CREATE TABLE vierailijat (
+create database palaute;
+use palaute;
+create table vierailijat (
     id INT(200) PRIMARY KEY AUTO_INCREMENT,
     nimimerkki TEXT(25),
     sahkoposti VARCHAR(25),
     tahtoo TEXT(25),
     viesti VARCHAR(250)
 );
+
+### Komennot joilla luodaan käyttäjä ja salasana ###
+create user kokki@'%' identified by 'naminami';
+grant all on palaute.* to kokki@'%';
 
 
 ### Käskyjä joilla voi tsekkaa miltä databasessa näyttää ###
