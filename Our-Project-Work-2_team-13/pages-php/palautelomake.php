@@ -1,9 +1,9 @@
 <?php
 //header
-include("../pages-html/header_Joni.html");
+include("../pages-html/includes/header_Joni.html");
 
 //navbar
-include("../pages-html/navbar_Joni.html");
+include("../pages-html/includes/navbar_Joni.html");
 
 //mikä on sivun pääsisältö. 7 vaihtoehtoa. 
 //1. main
