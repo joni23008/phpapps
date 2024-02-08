@@ -42,17 +42,19 @@ Ylläpitopuoli on suojattu "htaccessilla". Muutetaan nykyistä projektia ja sen 
 
 ### TEHTÄVIÄ ###
 - (JONI) nykyinen tiedosto -- footer, jossa on linkki palautelomakkeeseen.
-- (JONI) uusi tiedosto -- htaccess, tunnukset yhteydelle joka muodostetaan MySQL.
-- (HENKKA) uusi tiedosto -- palautelomake (bootstrap), lomakkeen alapuolella voisi näkyä jo annetut palautteet.
-- (HENKKA) uusi tiedosto -- php, sähköposti ilmoitus uudesta submittista.
-- (MIKKO) uusi tiedosto -- php, tietojen kirjoittaminen tietokantaan.
-- (MIKKO) uusi tiedosto -- php, tietojen lukeminen tietokannnasta ja tiedot näkyisivät lomakesivulla.
+- (JONI) työnalla, ei toimi vielä -- htaccess, tunnukset yhteydelle joka muodostetaan MySQL.
 - (JONI) MySQL -- tietokanta suunnittelu ja taulut. Ja miten saadaan yhteys jaettua/toimimaan.
 - (JONI) nykyinen tiedosto -- yhteysvirhe.html testaus.
+- (HENKKA) uusi tiedosto -- palautelomake (bootstrap), lomakkeen alapuolella voisi näkyä jo annetut palautteet.
+- (HENKKA) uusi tiedosto -- php, sähköposti ilmoitus uudesta submittista.
+- (HENKKA) uusi tiedosto -- lomake.html/php luominen ja testaus. Siirrä php tiedostot sille varattuun kansioon.
+- (HENKKA/MIKKO) nykyiset tiedostot -- päivittäkää teidän tekemät sivut siihen samaan formaattiin miten ollaan nyt kurssilla 
+tehty eli html osiot omissa tiedostoissa.Lisäksi voitas kimpassa miettii jos tolle CSS tiedostolle jotai tekis.
+- (MIKKO) uusi tiedosto -- php, tietojen kirjoittaminen tietokantaan.
+- (MIKKO) uusi tiedosto -- php, tietojen lukeminen tietokannnasta ja tiedot näkyisivät lomakesivulla.
 - (MIKKO) Discord-ryhmä.
 - (MIKKO) uusi tiedosto -- submitted.html/php luominen ja testaus.
-- (HENKKA) uusi tiedosto -- lomake.html/php luominen ja testaus. Siirrä php tiedostot sille varattuun kansioon.
-- (MIKKO/HENKKA) nykyiset tiedostot -- päivittäkää teidän tekemät sivut siihen samaan formaattiin miten ollaan nyt kurssilla tehty eli html osiot omissa tiedostoissa.Lisäksi voitas kimpassa miettii jos tolle CSS tiedostolle jotai tekis.
+
 
 
 ### Joni ###
