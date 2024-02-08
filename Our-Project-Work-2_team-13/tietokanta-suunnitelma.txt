@@ -16,6 +16,8 @@ viesti
 
 ### Komennot joilla luodaan tää tietokanta ###
 
+mysql -u root -p
+
 create database palaute;
 use palaute;
 create table vierailijat (
@@ -25,6 +27,17 @@ create table vierailijat (
     tahtoo TEXT(25),
     viesti VARCHAR(250)
 );
+
+### Komennot joilla laitetaan tiedot tauluun ###
+
+insert into vierailijat (id, nimimerkki, sahkoposti, tahtoo, viesti)
+values (1, 'joni', 'joni@gmail.com', 'liharuokia', 'oli hyvää hernekeittoa,nam!');
+
+insert into vierailijat (id, nimimerkki, sahkoposti, tahtoo, viesti)
+values (2, 'mikko', 'mikko@gmail.com', 'kalaruokia', 'hernekeittoon olisi voinut laittaa enemmän sipulia');
+
+insert into vierailijat (id, nimimerkki, sahkoposti, tahtoo, viesti)
+values (3, 'henkka', 'henkka@gmail.com', 'kasvisruokia', 'paistettu pekonimuru kruunasi hernekeittoni');
 
 ### Komennot joilla luodaan käyttäjä ja salasana ###
 create user kokki@'%' identified by 'naminami';
