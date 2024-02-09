@@ -1,5 +1,5 @@
 ### tunnukset ###
-databaseserver=shell.hamk.fi
+databaseserver=localhost
 database=web_trtkp23_13
 username=trtkp23_13
 password=5XERN5SQ
