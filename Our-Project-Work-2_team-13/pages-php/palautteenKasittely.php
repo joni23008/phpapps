@@ -1,7 +1,7 @@
 <?php
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
-    $config=parse_ini_file("../.ht.configuration_testi.ini");
+    $config=parse_ini_file("../.ht.configuration.ini");
     $yhteys=mysqli_connect($config["databaseserver"], $config["username"], $config["password"], $config["database"]);
 } catch (Exception $e) {
     header("Location: ../pages-php/yhteysvirhe_Joni.php");
