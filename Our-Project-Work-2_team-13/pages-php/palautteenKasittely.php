@@ -20,6 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Palautteen lähetys</title>
     <link rel="stylesheet" type="text/css" href="../css/styles_Joni.css">
     <link rel="stylesheet" type="text/css" href="../css/styles_Henkka.css">
+    
 </head>
 <body>
     <div class="thank-you-message">
