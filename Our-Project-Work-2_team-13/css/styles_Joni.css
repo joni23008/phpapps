@@ -75,8 +75,7 @@ nav {
   color: white;
   font-size: 96px;
   font-weight: 700;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin: 0;
 }
 
 .main-text {
